@@ -1,7 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amal Seif | Personal Site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0d1117; /* GitHub&#x27;s dark background */
+      --bg-secondary: #161b22;
+      --fg: #c9d1d9;
+      --accent: #58a6ff;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "Inter", system-ui, sans-serif;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      padding: 3rem 1rem;
+    }
+    .wrapper {
+      max-width: 720px;
+      width: 100%;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.25rem;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .card {
+      background: var(--bg-secondary);
+      padding: 1rem 1.25rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+    }
+    ul {
+      list-style: none;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.875rem;
+      text-align: center;
+      color: #8b949e;
+    }
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <main class="wrapper">
+    <header>
+      <h1>Hi, I&#x27;m Amal</h1>
+      <p>
+        Applied mathematician &amp; aspiring economist building models at the intersection
+        of health sciences, Islamic finance, and data‑driven storytelling.
+      </p>
+    </header>
+
+    <section>
+      <h2>What I’m into right now</h2>
+      <ul>
+        <li>🧮 Financial econometrics &amp; volatility modelling (GARCH, state‑space MT)</li>
+        <li>💡 Pharmacokinetic simulations &amp; target‑controlled infusion</li>
+        <li>🌍 East‑African migration &amp; community health projects</li>
+        <li>🗣️ Perfecting my Palestinian Arabic accent</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Current Projects</h2>
+      <div class="card">
+        <h3>
+          <a href="https://github.com/username/fin-liquidity-ssmt" target="_blank" rel="noopener"
+            >State‑Space Multitaper Liquidity Analysis</a
+          >
+        </h3>
+        <p>
+          Comparing liquidity ratios of Sharia‑compliant vs. conventional firms using
+          Bayesian‑weighted spectral methods.
+        </p>
+      </div>
+      <div class="card">
+        <h3>
+          <a href="https://github.com/username/pk-infusion-viz" target="_blank" rel="noopener"
+            >Real‑time PK Infusion Visualizer</a
+          >
+        </h3>
+        <p>
+          Interactive tool to simulate drug plasma concentrations under different infusion
+          profiles.
+        </p>
+      </div>
+      <div class="card">
+        <h3>
+          <a href="https://github.com/username/opar" target="_blank" rel="noopener"
+            >Arabic OPI Study Deck</a
+          >
+        </h3>
+        <p>
+          Curated vocabulary lists &amp; mock prompts for Superior‑level Arabic proficiency.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Made with <span style="color: #e25555;">♥</span> &amp; VS Code •
+        <a href="mailto:amal@example.com">Email me</a> •
+        <a href="https://github.com/username">GitHub</a>
+      </p>
+    </footer>
+  </main>
 </body>
 </html>
